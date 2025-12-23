@@ -3,7 +3,7 @@ namespace: corejs-prod
 frontend:
   image:
     repository: 130618649638.dkr.ecr.ap-southeast-1.amazonaws.com/tuongpx-backend
-    tag: 0.1.23
+    tag: 0.1.25
   replicaCount: 2
   service:
     port: 80
@@ -11,7 +11,7 @@ frontend:
 backend:
   image:
     repository: 130618649638.dkr.ecr.ap-southeast-1.amazonaws.com/tuongpx-backend
-    tag: 0.1.23
+    tag: 0.1.25
   replicaCount: 2
   service:
     port: 80
