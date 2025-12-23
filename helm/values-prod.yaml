@@ -2,16 +2,16 @@ namespace: corejs
 
 frontend:
   image:
-    repository: harbor.defenselab.info/corejs/corejs-frontend
-    tag: 0.1.20
+    repository: 130618649638.dkr.ecr.ap-southeast-1.amazonaws.com/tuongpx-backend
+    tag: 0.1.23
   replicaCount: 2
   service:
     port: 80
 
 backend:
   image:
-    repository: harbor.defenselab.info/corejs/corejs-backend
-    tag: 0.1.20
+    repository: 130618649638.dkr.ecr.ap-southeast-1.amazonaws.com/tuongpx-backend
+    tag: 0.1.23
   replicaCount: 2
   service:
     port: 80
