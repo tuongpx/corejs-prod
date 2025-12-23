@@ -4,7 +4,7 @@ frontend:
   image:
     repository: 130618649638.dkr.ecr.ap-southeast-1.amazonaws.com/tuongpx-backend
     tag: 0.1.25
-  replicaCount: 2
+  replicaCount: 0
   service:
     port: 80
 
@@ -12,7 +12,7 @@ backend:
   image:
     repository: 130618649638.dkr.ecr.ap-southeast-1.amazonaws.com/tuongpx-backend
     tag: 0.1.25
-  replicaCount: 2
+  replicaCount: 0
   service:
     port: 80
 
