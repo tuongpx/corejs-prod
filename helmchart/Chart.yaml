@@ -1,0 +1,7 @@
+apiVersion: v2
+name: corejs
+description: Helm chart to deploy frontend + backend for corejs project
+type: application
+version: 1.0.0
+appVersion: "1.0"
+

@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: corejs-backend
+  namespace: {{ .Release.Namespace }}
+  labels:
+    app: corejs-backend
+spec:
+  replicas: {{ .Values.backend.replicaCount }}
+  selector:
+    matchLabels:
+      app: corejs-backend
+  template:
+    metadata:
+      labels:
+        app: corejs-backend
+    spec:
+      containers:
+        - name: corejs-backend
+          image: "{{ .Values.backend.image.repository }}:{{ .Values.backend.image.tag }}"
+          ports:
+            - containerPort: 80
+

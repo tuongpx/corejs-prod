@@ -1,0 +1,21 @@
+namespace: corejs
+
+frontend:
+  image:
+    repository: harbor.defenselab.info/corejs/corejs-frontend
+    tag: "latest"
+  replicaCount: 2
+  service:
+    port: 80
+
+backend:
+  image:
+    repository: harbor.defenselab.info/corejs/corejs-backend
+    tag: "latest"
+  replicaCount: 2
+  service:
+    port: 80
+
+ingress:
+  enabled: true
+  host: corejs.defenselab.info
