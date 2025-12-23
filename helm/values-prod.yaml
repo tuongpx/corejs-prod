@@ -1,4 +1,4 @@
-namespace: corejs
+namespace: corejs-prod
 
 frontend:
   image:
